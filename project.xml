@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Flappyjetman" package="com.invisiblespaceship.flappyjetman" version="1.0.0" company="Invisible Spaceship" />
+	<app main="Main" path="Export" file="Flappyjetman" />
+	
+	<window background="#000000" fps="30" />
+	<window width="500" height="700" unless="mobile" />
+	<window width="0" height="0" if="mobile" />
+
+	<window orientation="portrait" vsync="false" antialiasing="0" if="cpp" />
+	<window fullscreen="true" if="mobile" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	
+	<assets path="Assets" rename="assets" exclude="openfl.svg" />
+	<font name="Assets/C64_Pro_Mono-STYLE.ttf" id="c64" />
+	<icon path="Assets/openfl.svg" />
+	
+</project>
